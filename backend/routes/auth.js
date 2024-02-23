@@ -42,6 +42,7 @@ router.post('/createuser',[
           id:user._id
         }
       }
+      //return json web token for authentication
       const authtoken= jwt.sign(data,JWT_SECRET);
       res.json(authtoken)
 
