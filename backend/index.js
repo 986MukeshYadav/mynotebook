@@ -13,7 +13,6 @@ connectDB.once('open', () => {
   // app.get('/', (req, res) => {
   //   res.send('Hello World!');
   // });
-
   //Available Routes
 
   app.use('/api/auth',require('./routes/auth'));
